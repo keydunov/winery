@@ -1,0 +1,8 @@
+module <%= @name.camel_case %>
+  module Models
+    Sequel::Model.plugin :json_serializer
+
+    # Other models:
+    # autoload :Post, 'app/models/post'
+  end
+end

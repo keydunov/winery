@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require 'rubygems'
+require 'bundler/setup'
+require 'winery'
+
+begin
+  require 'winery/cli'
+  Winery::CLI.start
+rescue Interrupt => e
+  puts "\nExiting..."
+  exit 1
+rescue SystemExit => e
+  exit e.status
+end

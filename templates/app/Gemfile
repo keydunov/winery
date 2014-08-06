@@ -1,0 +1,14 @@
+# A sample Gemfile
+source "https://rubygems.org"
+ruby '2.1.2'
+
+gem 'rack'
+gem 'rack-cors'
+gem 'grape'
+gem 'activesupport'
+gem 'rake'
+gem 'unicorn'
+
+# DB
+gem 'sequel'
+gem 'pg'

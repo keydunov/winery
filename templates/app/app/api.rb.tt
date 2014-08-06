@@ -1,0 +1,17 @@
+module <%= @name.camel_case %>
+  module API
+    module V1
+      # Other APIs:
+      # autoload :Posts, 'app/api/v1/posts'
+    end
+
+    class Root < Grape::API
+      format :json
+
+      # mount APIs:
+      # version 'v1', using: :path do
+      #   mount V1::Posts
+      # end
+    end
+  end
+end
